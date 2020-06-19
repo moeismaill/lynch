@@ -6,7 +6,6 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import ShopProvider from '../context/shop.Context'
 import HomePage from '../pages/HomePage'
 import ProductPage from '../pages/ProductPage';
-import Navbar from './Navbar'
 import Cart from './Cart'
 
 

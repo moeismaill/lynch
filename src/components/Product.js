@@ -1,5 +1,5 @@
 import React, { useContext, useEffect} from 'react'
-import ShopProvider, { ShopContext, ShopConsumer } from '../context/shop.Context'
+import ShopProvider, { ShopContext } from '../context/shop.Context'
 import { Row, Col } from 'atomize'
 import { Link } from 'react-router-dom'
 

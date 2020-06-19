@@ -1,5 +1,5 @@
 import React from 'react'
-import ShopProvider, { ShopContext, ShopConsumer } from '../context/shop.Context'
+import ShopProvider from '../context/shop.Context'
 
 import '../css/homepage.css'
 import '../css/layout.css'
