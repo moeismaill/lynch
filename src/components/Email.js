@@ -8,7 +8,7 @@ const Email = () => {
                 <div className="description">
                     <p>Join the journey for faster recovery!</p>
                 </div>
-            <form className="form">
+            <form className="form" netlify>
                 <div className="input">
                     <input type="text" className="button" id="email" name="email" placeholder="email@example.com" />
                     <input type="submit" className="button" id="submit" value="SIGN UP" />

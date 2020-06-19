@@ -1,6 +1,6 @@
 import React, {useContext}  from 'react'
 import {  Anchor } from 'atomize'
-import { Link, withRouter } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { ShopContext } from '../context/shop.Context'
 import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
 

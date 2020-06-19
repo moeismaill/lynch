@@ -1,6 +1,5 @@
 import React, { useContext, useEffect} from 'react'
 import { ShopContext } from '../context/shop.Context'
-import Client from 'shopify-buy'
 
 import '../css/homepage.css'
 import '../css/layout.css'

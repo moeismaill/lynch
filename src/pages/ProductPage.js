@@ -1,13 +1,11 @@
 import React, {useEffect, useContext} from 'react'
 import { useParams } from 'react-router-dom'
 import { ShopContext } from '../context/shop.Context'
-import { Text, Div, Button, Row, Col, Container } from 'atomize'
-import Navbar from '../components/Navbar';
 
 function ProductPage() {
 
     let { id } = useParams();
-    const { fetchProductWithId, addItemToCheckout,  product} = useContext(ShopContext)
+    const { fetchProductWithId,  product} = useContext(ShopContext)
 
     useEffect(() => {
         fetchProductWithId(id)
