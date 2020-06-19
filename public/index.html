@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:800,600,300" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="../src/css/layout.css" />
+    <link rel="stylesheet" href="https://themes.audemedia.com/html/goodgrowth/css/owl.theme.default.min.css" />
+
+
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Lynch</title>
+  </head>
+  <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/owl.carousel.min.js"></script>
+    <script type="text/javascript">
+    (function () {
+      var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+      if (window.ShopifyBuy) {
+        if (window.ShopifyBuy.UI) {
+          ShopifyBuyInit();
+        } else {
+          loadScript();
+        }
+      } else {
+        loadScript();
+      }
+      function loadScript() {
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = scriptURL;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+        script.onload = ShopifyBuyInit;
+      }
+      function ShopifyBuyInit() {
+        var client = ShopifyBuy.buildClient({
+          domain: 'appearr.myshopify.com',
+          storefrontAccessToken: 'ad8f767692d666247ceae641b2d1c76b',
+        });
+        ShopifyBuy.UI.onReady(client).then(function (ui) {
+          ui.createComponent('product', {
+            id: '5291772772512',
+            node: document.getElementById('product-component-1592505325245'),
+            moneyFormat: '%24%7B%7Bamount%7D%7D',
+            options: {
+      "product": {
+        "styles": {
+          "product": {
+            "@media (min-width: 601px)": {
+              "max-width": "100%",
+              "margin-left": "0",
+              "margin-bottom": "50px",
+              "margin-top": "17%"
+            },
+            "text-align": "left",
+            "padding": "0 16px"
+          },
+          "title": {
+            "font-size": "26px",
+          },
+          "button": {
+            ":hover": {
+              "background-color": "#00cdb5"
+            },
+            "background-color": "#00e4c9",
+            ":focus": {
+              "background-color": "#00cdb5"
+            }
+          },
+          "price": {
+            "font-size": "18px"
+          },
+          "compareAt": {
+            "font-size": "15.299999999999999px"
+          },
+          "unitPrice": {
+            "font-size": "15.299999999999999px"
+          }
+        },
+        "buttonDestination": "checkout",
+        "layout": "horizontal",
+        "contents": {
+          "img": false,
+          "imgWithCarousel": true,
+          "description": true
+        },
+        "width": "100%",
+        "text": {
+          "button": "Buy now"
+        }
+      },
+      "productSet": {
+        "styles": {
+          "products": {
+            "@media (min-width: 601px)": {
+              "margin-left": "-20px"
+            }
+          }
+        }
+      },
+      "modalProduct": {
+        "contents": {
+          "img": false,
+          "imgWithCarousel": true,
+          "button": false,
+          "buttonWithQuantity": true
+        },
+        "styles": {
+          "product": {
+            "@media (min-width: 601px)": {
+              "max-width": "100%",
+              "margin-left": "0px",
+              "margin-bottom": "0px"
+            }
+          },
+          "button": {
+            ":hover": {
+              "background-color": "#00cdb5"
+            },
+            "background-color": "#00e4c9",
+            ":focus": {
+              "background-color": "#00cdb5"
+            }
+          }
+        },
+        "text": {
+          "button": "Add to cart"
+        }
+      },
+      "cart": {
+        "styles": {
+          "button": {
+            ":hover": {
+              "background-color": "#00cdb5"
+            },
+            "background-color": "#00e4c9",
+            ":focus": {
+              "background-color": "#00cdb5"
+            }
+          }
+        },
+        "text": {
+          "total": "Subtotal",
+          "button": "Checkout"
+        },
+        "popup": false
+      },
+      "toggle": {
+        "styles": {
+          "toggle": {
+            "background-color": "#00e4c9",
+            ":hover": {
+              "background-color": "#00cdb5"
+            },
+            ":focus": {
+              "background-color": "#00cdb5"
+            }
+          }
+        }
+      }
+    },
+          });
+        });
+      }
+    })();
+    </script>
+    <div id="root"></div>
+    <div id='product-component-1592505325245'></div>
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        "use strict";
+        $('#customers-testimonials').owlCarousel({
+            loop: true,
+            center: true,
+            items: 3,
+            margin: 0,
+            autoplay: true,
+            dots:true,
+            autoplayTimeout: 8500,
+            smartSpeed: 450,
+            responsive: {
+              0: {
+                items: 1
+              },
+              768: {
+                items: 2
+              },
+              1170: {
+                items: 3
+              }
+            }
+        });
+    });
+    </script>
+<!-- TESTIMONIALS -->
+  <section class="testimonials">
+	<div class="container">
+
+      <div class="row">
+        <div class="col-sm-12">
+          <div id="customers-testimonials" class="owl-carousel">
+
+            <div class="item">
+              <div class="shadow-effect">
+                <img class="circle" src="https://img.icons8.com/ios-filled/50/000000/quote-left.png"/>                <p>I bought a few massage guns and this is my favorite. Great amount of force with 3 different settings. Not too noisy that the massage is still relaxing. And very easy to use, charge, and change massage tips.</p>
+              </div>
+              <div class="testimonial-name">EMILIANO A</div>
+            </div>
+
+            <div class="item">
+              <div class="shadow-effect">
+                <img class="circle" src="https://img.icons8.com/ios-filled/50/000000/quote-left.png"/>                <p>I bought a few massage guns and this is my favorite. Great amount of force with 3 different settings. Not too noisy that the massage is still relaxing. And very easy to use, charge, and change massage tips.</p>
+                <p>This massager is the real deal. My husband and I bought this massager, after a few friends who also have a massage gun raved about it, to help get a knot out of my shoulder and lower back. It did not disappoint!</p>
+              </div>
+              <div class="testimonial-name">ANNA I</div>
+            </div>
+
+            <div class="item">
+              <div class="shadow-effect">
+                <img class="circle" src="https://img.icons8.com/ios-filled/50/000000/quote-left.png"/>                <p>I bought a few massage guns and this is my favorite. Great amount of force with 3 different settings. Not too noisy that the massage is still relaxing. And very easy to use, charge, and change massage tips.</p>
+                <p>I bought this for my husband and he loves this massaging gun. We use it every day. It loosens up all our tense muscles. I love this device.</p>
+              </div>
+              <div class="testimonial-name">LARA A</div>
+            </div>
+
+            <div class="item">
+              <div class="shadow-effect">
+                <img class="circle" src="https://img.icons8.com/ios-filled/50/000000/quote-left.png"/>                <p>I bought a few massage guns and this is my favorite. Great amount of force with 3 different settings. Not too noisy that the massage is still relaxing. And very easy to use, charge, and change massage tips.</p>
+                <p>I'm always traveling and stuck on long flights. Add in long hours working on sets while also maintaining a consistent gym schedule. The Massage Gun is my saving grace. It helps me relax and recover no matter where I am in the world.</p>
+              </div>
+              <div class="testimonial-name">IAN O</div>
+            </div>
+
+            <div class="item">
+              <div class="shadow-effect">
+                <img class="circle" src="https://img.icons8.com/ios-filled/50/000000/quote-left.png"/>                <p>I bought a few massage guns and this is my favorite. Great amount of force with 3 different settings. Not too noisy that the massage is still relaxing. And very easy to use, charge, and change massage tips.</p>
+                <p>I got this product because I borrowed it from my friend and it was just amazing. It really does penetrate deeply into your muscles and it greats for those that have muscle pains/soreness, or athletes. This massage gun offers 3 different speeds/vibration frequency along with 4 different types of massaging heads. It's super easy to use, all you have to do is make sure its charged and turn the power on and the bottom of the handle and select the desire speed. </p>
+              </div>
+              <div class="testimonial-name">MICHAEL T</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-list">
+        <a href="/" class="footer-link">Home</a>
+        <a href="/" class="footer-link">About</a>
+        <a href="/" class="footer-link">Offer</a>
+        <a href="/" class="footer-link">Contact</a>
+      </div>
+      <p class="footer-paragraph">
+        2020&copy;Lynch
+      </p>
+    </footer>
+
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
