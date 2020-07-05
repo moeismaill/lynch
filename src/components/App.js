@@ -7,6 +7,8 @@ import ShopProvider from '../context/shop.Context'
 import HomePage from '../pages/HomePage'
 import ProductPage from '../pages/ProductPage';
 import Cart from './Cart'
+import About from '../pages/About';
+// import Contact from './Contact'
 
 
 
@@ -23,6 +25,9 @@ function App() {
         <Router>
           <Cart />
           <Switch>
+            <Route path="/About">
+              <About />
+            </Route>
             <Route path="/product/:id">
               <ProductPage />
             </Route>

@@ -649,8 +649,13 @@ html {
 
 .testimonials {
   max-width: 100%;
-  margin: 0;
+  margin: 1rem 0 0 0;
   padding: 0;
+}
+
+.testimonials h1{
+  text-align: center;
+  margin-top: 2rem;
 }
 
 #customers-testimonials .shadow-effect p {
@@ -720,32 +725,10 @@ display: inline-block;
 /* Footer */
 footer {
   margin: 20% 0 0 0;
-  background-color: #A9A9A9;
   padding: 2rem 0;
   overflow: hidden;
 }
 
-.footer-list {
-  display: flex;
-  justify-content: center;
-}
-
-.footer-link {
-  font-size: 1rem;
-  color: #fff;
-  margin: 0 2rem;
-  background-color: #A9A9A9;
-  padding: .2rem 2rem;
-  letter-spacing: .3rem;
-  transition: all .2s;
-  text-align: center;
-  text-decoration-line: none;
-}
-
-.footer-link:hover {
-  transform: rotate(-10deg);
-  box-shadow: 0 2rem 3rem #000;
-}
 
 .footer-paragraph {
   text-align: center;
@@ -755,23 +738,6 @@ footer {
   margin: 2rem auto 0 auto;
 }
 
-@media screen and  (max-width: 1200px) {
-
-}
-
-@media screen and  (max-width: 1000px) {
-  .nav-list {
-      flex-direction: column;
-  }
-
-  .nav-link {
-      flex-grow: 1;
-  }
-  .footer-link {
-    padding: .3rem 2rem;
-    margin: 0 1rem;
-  }
-}
 
 
 @media screen and (max-width: 800px) {
@@ -816,6 +782,5 @@ footer {
   html {
       font-size: 75%;
   }
-  h1 {}
 }
   

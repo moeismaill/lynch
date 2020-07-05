@@ -8,7 +8,7 @@ import '../css/layout.css'
 import Benefits from '../components/Benefits'
 import Hook from '../components/Hook'
 import Banner from '../components/Banner'
-import Email from '../components/Email'
+import Contact from '../components/Contact'
 
 
 const HomePage = () => {
@@ -35,7 +35,7 @@ const HomePage = () => {
             <Banner />
             <Hook />
             <Benefits />
-            <Email />
+            <Contact />
         </div>
     )
 }

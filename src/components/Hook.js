@@ -5,7 +5,7 @@ const Hook = () => {
     return (
         <div className="hook" style={{
             width: "100vw", 
-            height: "35vh", 
+            height: "25vh", 
             textAlign: "center", 
             padding: "2rem 0 0 0", 
             margin: "0", 
@@ -13,9 +13,8 @@ const Hook = () => {
             display: "inline-block"
     }} >
                 <div className="description">
-             <h1>Therapy, Easier Than Ever</h1>
+             <h1>Making Therapy Easier Than Ever</h1>
                     <p>Join the journey for faster recovery!</p>
-            <button>Buy Now</button>
                 </div>
         </div>
     )

@@ -20,7 +20,7 @@ const Banner = () => {
                 backgroundPosition: "center",
                 }} >
                     <Navbar />
-                    <h1 style={{color: "white", mixBlendMode: "difference",  textAlign: "center", position: "relative", top: "20%", fontWeight: "900"}} >
+                    <h1 style={{color: "white",  textAlign: "center", position: "relative", top: "20%", fontWeight: "900"}} >
                         Pain relief. Whenever. Wherever.
                     </h1>
                     <button onClick={() =>  new ShopProvider()} >Try Lynch Today</button>
